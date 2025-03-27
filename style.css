@@ -1,12 +1,12 @@
 * {
   margin: 0 auto;
-
-  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 .container {
-  width: 800px;
+  width: 830px;
   height: 650px;
+
 }
 
 header {
@@ -81,30 +81,49 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  list-style: none;
   list-style-type: none;
   padding: 15px 0 0 0;
+}
 
-
+a {
+  text-decoration: none;
+  color: black;
 }
 
 main {
   width: 800px;
   height: 300px;
   display: flex;
+
 }
 
-.div-teste {
+footer {
+  width: 800px;
+  height: 25px;
+  background-color: #526d82;
+}
+#text-area {
   width: auto;
   flex: 1;
-  color: #222831;
   padding: 10px;
+
+  h3 {
+    text-align: center;
+    padding-bottom: 4px;
+  }
+
+  p {
+    padding: 8px;
+    font-size: 14px;
+  }
 }
 
-.div-teste:nth-child(even) {
+#text-area:nth-child(even) {
   background-color: #e0e7e9;
 }
 
-.div-teste:nth-child(odd) {
+#text-area:nth-child(odd) {
   background-color: #ecf0f1;
 }
 
@@ -114,21 +133,21 @@ section {
   display: flex;
 }
 
-#home {
+#bio {
   display: flex;
 }
 
-/* Esconde a seção Home quando não for o alvo */
-#home:not(:target) {
+
+#bio:not(:target) {
   display: none;
 }
 
-/* Exibe a seção Home quando for o alvo */
-#home:target {
+
+#bio:target {
   display: flex;
 }
 
-/* Esconde a seção Sobre por padrão */
+
 #sobre {
   display: none;
 }
@@ -136,4 +155,11 @@ section {
 /* Exibe a seção Sobre quando for o alvo */
 #sobre:target {
   display: flex;
+}
+
+#experiencia {
+  display: none;
+}
+#experiencia:target {
+  display: none;
 }
