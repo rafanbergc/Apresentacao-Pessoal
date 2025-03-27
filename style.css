@@ -1,0 +1,139 @@
+* {
+  margin: 0 auto;
+
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.container {
+  width: 800px;
+  height: 650px;
+}
+
+header {
+  width: 800px;
+  height: 300px;
+  background-color: #526d82;
+  color: #222831;
+  display: flex;
+
+  .header-content {
+    margin-top: 55px;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  p {
+    margin-top: 2px;
+    color: #bcccdc;
+
+  }
+
+  i {
+    height: 18px;
+    width: 18px;
+    margin-right: 3px;
+    text-align: center;
+  }
+
+  .courses {
+    margin-top: 8px;
+  }
+}
+
+.download {
+  background-color: #222831;
+  border-radius: 5px;
+  text-align: center;
+  width: 180px;
+  height: 25px;
+  margin: 9px 0 0 0;
+  align-items: center;
+  padding-top: 2px;
+}
+
+.img {
+  width: 190px;
+  height: 200px;
+  border: 2px #222831 solid;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-self: center;
+  }
+}
+
+nav {
+  width: 800px;
+  height: 50px;
+
+  background-color: #bcccdc;
+  color: #222831;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 15px 0 0 0;
+
+
+}
+
+main {
+  width: 800px;
+  height: 300px;
+  display: flex;
+}
+
+.div-teste {
+  width: auto;
+  flex: 1;
+  color: #222831;
+  padding: 10px;
+}
+
+.div-teste:nth-child(even) {
+  background-color: #e0e7e9;
+}
+
+.div-teste:nth-child(odd) {
+  background-color: #ecf0f1;
+}
+
+section {
+  width: 800px;
+  height: 300px;
+  display: flex;
+}
+
+#home {
+  display: flex;
+}
+
+/* Esconde a seção Home quando não for o alvo */
+#home:not(:target) {
+  display: none;
+}
+
+/* Exibe a seção Home quando for o alvo */
+#home:target {
+  display: flex;
+}
+
+/* Esconde a seção Sobre por padrão */
+#sobre {
+  display: none;
+}
+
+/* Exibe a seção Sobre quando for o alvo */
+#sobre:target {
+  display: flex;
+}
