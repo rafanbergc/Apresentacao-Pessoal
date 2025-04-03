@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+body {
+  background: #000;
+  width: 95vw;
+  height: 95vh;
+  font-family: "Roboto Mono", monospace;
+  color: aliceblue;
+  margin: 25px 25px 25px 25px;
+  border: 1px solid white;
+
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  width: 95vw;
+  height: 95vh;
+}
+
+
+#left {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 40vw;
+  height: 95vh;
+
+  header {
+    height: 20vh;
+
+    h1 {
+      font-size: 60px;
+      font-weight: 200;
+    }
+
+    h2 {
+      font-size: 25px;
+      font-weight: 100;
+    }
+
+    p {
+      font-size: 10px;
+      font-weight: 100;
+    }
+  }
+
+  nav {
+    padding-top: 10px;
+    height: 60vh;
+
+    ul {
+      list-style: none;
+
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      font-weight: 100;
+    }
+  }
+
+  footer {
+    height: 20vh;
+    width: 48vh;
+
+    .icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .inside-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 100;
+    }
+
+    p {
+      font-size: 10px;
+    }
+  }
+}
+
+#right {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55vw;
+  height: 95vh;
+  padding: 15px;
+
+  .content {
+    width: 55vw;
+    height: 95vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text-home {
+    text-align: right;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-50%);
+
+
+    p {
+      font-size: 14px;
+      font-weight: 200;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 300;
+
+    }
+  }
+
+  .text-bio {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 15px;
+
+
+  }
+
+  .sobre-text {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 15px;
+
+
+  }
+
+  .cursos-text {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 15px;
+
+    h1 {
+      font-size: 17px;
+      font-weight: 300;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    span {
+      font-size: 15px;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+
+}
+
+.card-experiencias {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 15px;
+
+  h3 {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  span {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  li {
+    font-size: 14px;
+    font-weight: 200;
+  }
+}
+
+.close-btn {
+  display: block;
+  text-align: right;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#teste {
+  background-color: #000;
+  z-index: 9999;
+
+  .card-experiencias {
+    text-align: left;
+    padding: 0;
+
+    h3 {
+      font-size: 17px;
+      font-weight: 400;
+
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 300;
+
+    }
+  }
+
+  h4 {
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  li {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+#fundo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9998;
+
+}
+
+
+#home {
+  display: block;
+}
+
+#home:target {
+  display: block;
+}
+
+#home:not(:target) {
+  display: none;
+}
+
+
+#bio {
+  display: none;
+}
+
+#bio:target {
+  display: block;
+}
+
+#sobre {
+  display: none;
+}
+
+#sobre:target {
+  display: block;
+}
+
+#experiencias:target {
+  display: flex;
+}
+
+#cursos {
+  display: none;
+}
+
+#cursos:target {
+  display: block;
+}
+
+#experiencias:not(:target) {
+  display: none;
+}
+
+#quinto-andar {
+  display: none;
+}
+
+#quinto-andar:not(:target) {
+  display: none;
+}
+
+#quinto-andar:target {
+  display: flex;
+}
+
+#move {
+  display: none;
+}
+
+#move:not(:target) {
+  display: none;
+}
+
+#move:target {
+  display: flex;
+}
+
+#bioritmo {
+  display: none;
+}
+
+#bioritmo:not(:target) {
+  display: none;
+}
+
+#bioritmo:target {
+  display: flex;
+}

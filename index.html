@@ -7,10 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta http-equiv="" content="0;URL=#home">
     <title>Rafael Novaes Bergstron Conceição - CV</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <script>
         window.onload = function () {
             if (window.location.hash === "") {
@@ -22,83 +26,265 @@
 
 <body>
     <div class="container">
-        <header>
-            <div class="header-content">
-                <div class="title-header">
-                    <h1>Rafael Novaes Bergstron Conceição</h1>
+        <section id="left">
+            <header>
+                <h1>Rafael Bergstron</p>
+                    <h2>Software Engineer</h2>
+                    <p>Análise e desenvolvimento de sistemas</p>
+                    <p>Java | JavaScript | HTML5 | CSS3 | INFNET</p>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#experiencias">Experiências</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <div class="icons">
+                    <div class="inside-icons"><i class="fa-brands fa-linkedin-in"></i>
+                        <p>linkedin</p>
+                    </div>
+                    <div class="inside-icons"><i class="fa-brands fa-github-alt"></i>
+                        <p>github</p>
+                    </div>
+                    <div class="inside-icons"><i class="fa-regular fa-envelope"></i>
+                        <p>e-mail</p>
+                    </div>
+
+                    <div class="inside-icons"><i class="fa-brands fa-instagram"></i>
+                        <p>instagram</p>
+                    </div>
+                    <div class="inside-icons">
+                        <i class="fa-solid fa-download"></i>
+                        <p>curriculo</p>
+                    </div>
                 </div>
 
-                <div class="courses">
-                    <p>
-                        <i class="fa-solid fa-building-columns"></i>Análise e
-                        desenvolvimento de sistemas
-                    </p>
-                    <p><i class="fa-brands fa-java"></i>Java</p>
-                    <p><i class="fa-brands fa-js"></i>JavaScript</p>
-                    <p><i class="fa-brands fa-html5"></i>HTML5</p>
-                    <p><i class="fa-brands fa-css3-alt"></i>CSS3</p>
-
+            </footer>
+        </section>
+        <section id="right">
+            <section id="home">
+                <div class="content">
+                    <div class="text-home">
+                        <p> Estudante de Análise e desenvolvimento de sistemas, migrando para a carreira de Tecnologia
+                            depois
+                            de mais de 10 anos atuando como Personal Trainer.
+                        </p>
+                        <p>Muito prazer, <span>Rafa!</span></p>
+                    </div>
                 </div>
-                <p class="download"><i class="fa-solid fa-download"></i>Download Curriculo</p>
-            </div>
-            <div class="img"><img src="public/foto/Imagem do WhatsApp de 2025-01-03 à(s) 15.01.43_a476a256.jpg" alt="">
-            </div>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#bio">Bio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#experiencia">Experiências</a></li>
-                <li>asd</li>
-                <li>asdasd</li>
-            </ul>
-        </nav>
-        <main>
+            </section>
             <section id="bio">
-                <div id="text-area" class="resume">
-                    <h3>Bio</h3>
-                    <p>Estudante de Análise e desenvolvimento de sistemas, migrando para a carreira de Tecnologia depois
-                        de mais de 10 anos atuando como Personal Trainer.</p>
-                    <p>Experiencia recente atuando como engenheiro de software com as linguagens Java, JavaScript,
-                        HTMl5, CSS3 e React.</p>
-                    <p>Formação prevista para 06/2027, e buscando novas oportunidades como estágiario ou desenvolvedor
-                        jr.</p>
+                <div class="content">
+                    <div class="text-bio">
+                        <h3>Bio</h3>
+                        <p>Estudante de Análise e desenvolvimento de sistemas, migrando para a carreira de Tecnologia
+                            depois
+                            de mais de 10 anos atuando como Personal Trainer.</p>
+                        <p>Experiencia recente atuando como engenheiro de software com as linguagens Java, JavaScript,
+                            HTMl5, CSS3 e React.</p>
+                        <p>Formação prevista para 06/2027, e buscando novas oportunidades como estágiario ou
+                            desenvolvedor
+                            jr.</p>
+                    </div>
+                    <div class="text-bio">
+                        <h3>Hobbies</h3>
+                        <p>Sou uma pessoa extremamente ativa, mas também gosto dos momentos de descanso e paz.</p>
+                        <p>Ir à academia e treinar ao ar livre faz parte da minha rotina. Toda semana estou praticando
+                            atividades físicas, tanto pelo shape quanto pela saúde.</p>
+                        <p>Gosto também de cozinhar as famosas comfort foods. Nem só de dieta vive esse DevBuilder! E,
+                            claro, também gosto de pedir algo no delivery.</p>
+                        <p>Futevôlei é uma das minhas formas favoritas de juntar esporte e diversão, unindo técnica e
+                            descontração em um jogo dinâmico.</p>
+                        <p>Nos momentos de descanso, gosto de jogar videogame ou assistir a filmes e séries.</p>
+
+                    </div>
                 </div>
-                <div id="text-area" class="personal-info">
-                    <h3>Info Pessoal</h3>
-                    <p>Nascimento: 17/05/2025</p>
-                    <p>Pronomes: Ele/Dele</p>
-                    <p>email: rafa.bergstron@icloud.com</p>
-                    <p>Telefone: +55 11 9XXXX-XXXX</p>
-                    <p>GitHub: <a href="https://github.com/rafanbergc">/rafanbergc</a></p>
-                    <p>Linkedin: <a href="https://www.linkedin.com/in/rafaelbergstron/">/rafaelbergstron</a></p>
-                    <p>Minha localização: São Paulo - SP
-                </div>
-                <div id="text-area">asdasdasdad</div>
             </section>
             <section id="sobre">
-                <div id="text-area">
-                    <h3>Resumo Profissional</h3>
-                    <p>Experiência em desenvolvimento de sistemas utilizando Java com SpringBoot e JavaScript,
-                        aplicando conceitos de OOP (Programação Orientada a Objetos), estruturas de dados e
-                        algoritmos. 
-                    </p>
-                    <p>
-                        Atuação em soluções relacionadas a financiamentos imobiliários e simulações de
-                        crédito em parceria com bancos. Também possuo experiência em HTML e CSS, com foco na
-                        criação de páginas estruturadas, responsivas e alinhadas às melhores práticas de usabilidade
-                        e design.
-                    </p>
-                    <p>
-                        Minha trajetória profissional também inclui experiência como Professor de Educação Física e
-                        Coordenador de Estágio, onde desenvolvi competências sólidas em liderança, planejamento e
-                        comunicação.
-                    </p>
+                <div class="content">
+                    <div class="sobre-text">
+                        <h3>Resumo Profissional</h3>
+                        <p>Experiência em desenvolvimento de sistemas utilizando Java com SpringBoot e JavaScript,
+                            aplicando conceitos de OOP (Programação Orientada a Objetos), estruturas de dados e
+                            algoritmos.
+                        </p>
+                        <p>
+                            Atuação em soluções relacionadas a financiamentos imobiliários e simulações de
+                            crédito em parceria com bancos. Também possuo experiência em HTML e CSS, com foco na
+                            criação de páginas estruturadas, responsivas e alinhadas às melhores práticas de usabilidade
+                            e design.
+                        </p>
+                        <p>
+                            Minha trajetória profissional também inclui experiência como Professor de Educação Física e
+                            Coordenador de Estágio, onde desenvolvi competências sólidas em liderança, planejamento e
+                            comunicação.
+                        </p>
+                    </div>
                 </div>
             </section>
-            <section id="experiencia"></section>
-        </main>
-        <footer></footer>
+            <section id="experiencias">
+                <div class="content">
+
+                    <a href="#quinto-andar">
+                        <div class="card-experiencias">
+                            <h3>QuintoAndar</h3>
+                            <p><span>Cargo:</span> Engenheiro de Software Júnior</p>
+                            <p><span>Período:</span> Julho/2022 - Maio/2024</p>
+                        </div>
+                    </a>
+
+                    <a href="#move">
+                        <div class="card-experiencias">
+                            <h3>Move Action Fitness Cargo</h3>
+                            <p><span>Cargo:</span> Professor de Treinamento Funcional</p>
+                            <p><span>Periodo:</span> Maio/2021 - Junho/2022</p>
+                        </div>
+                    </a>
+
+                    <a href="#bioritmo">
+                        <div class="card-experiencias">
+                            <h3>Escola de Ginástica e Dança BioBanco Ltda (BioRitmo)</h3>
+                            <p><span>Cargo:</span> Professor
+                                de Educação Física</p>
+                            <p><span>Período:</span> Agosto/2014 - Outubro/2017</p>
+                        </div>
+                    </a>
+                </div>
+
+            </section>
+            <section id="cursos">
+                <div class="content">
+                    <div class="cursos-text">
+                        
+                        <h1>Graduação</h1>
+                        <h3>Análise e desenvolvimento de sistemas</h3>
+                        <p><span>Instituição:</span> Infnet</p>
+                        <p><span>Previsão de Conclusão:</span>
+                            2027</p>
+                    </div>
+                    <div class="cursos-text">
+                        
+                            <h1>Back-end</h1>
+                            <h3>Bootcamp Claro - Java com Spring Boot</h3>
+                            <p><span>Instituição:</span> Digital Innovation One (DIO)</p>
+                            <p><span>Conclusão:</span>
+                                2025</p>
+                        </div>
+                        <div class="cursos-text">
+                            <h3>Formação Lógica de Programação</h3>
+                            <p></p><span>Instituição:</span>
+                            Digital Innovation One (DIO)</p>
+                            <p> <span>Conclusão:</span>
+                                2024 </p>
+                        </div>
+                        <div class="cursos-text">
+                            <h1>Front-end</h1>
+                            <h3>Formação HTML Web Developer</h3>
+                            <p><span>Instituição:</span>
+                                Digital Innovation One (DIO)</p>
+                            <p><span>Conclusão:</span>
+                                2024 </p>
+                                </div>
+                                <div class="cursos-text">
+                                <h3>Formação CSS Developer</h3>
+                                <p> <span>Instituição:</span>
+                                    Digital Innovation One (DIO)</p>
+                                <p><span>Conclusão:</span>
+                                    2025 </p>
+                            </div>
+                            <div class="cursos-text">
+                                <h3>Formação JavaScript</h3>
+                                <p> <span>Instituição:</span>
+                                    Digital Innovation One (DIO)</p>
+                                <p> <span>Previsão de Conclusão:</span>
+                                    2025 (Cursando) </p>
+                            </div>
+                </div>
+            </section>
+            <section id="quinto-andar">
+                <div id="teste">
+                    <div id="fundo">
+                        <div class="formatacao">
+                            <a href="#experiencias" class="close-btn">x</a>
+                            <div class="card-experiencias">
+                                <h3>QuintoAndar</h3>
+                                <p><span>Cargo:</span> Engenheiro de Software Júnior</p>
+                                <p><span>Período:</span> Julho/2022 - Maio/2024</p>
+                            </div>
+                            <h4>Principais responsabilidades:</h4>
+                            <ul>
+                                <li>Desenvolvimento de funcionalidades em Java e JavaScript.</li>
+                                <li>Suporte na manutenção de sistemas existentes, com correção de bugs e ajustes.</li>
+                                <li>Participação em reuniões de planejamento e code reviews.</li>
+                                <li>Colaboração em equipe para implementação de soluções.</li>
+                                <li>Envolvimento gradual em tarefas mais complexas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="move">
+                <div id="teste">
+                    <div id="fundo">
+                        <div class="formatacao">
+                            <a href="#experiencias" class="close-btn">x</a>
+                            <div class="card-experiencias">
+                                <h3>Move Action Fitness Cargo</h3>
+                                <p><span>Cargo:</span> Professor de Treinamento Funcional</p>
+                                <p><span>Periodo:</span> Maio/2021 - Junho/2022</p>
+                            </div>
+                            <h4>Principais responsabilidades:</h4>
+                            <ul>
+                                <li>
+                                    Instrução de
+                                    alunos em treinos focados em condicionamento físico, objetivos
+                                    pessoais e recuperação de lesões.
+                                </li>
+                                <li>
+                                    Desenvolvimento de estratégias
+                                    para aprimorar a experiência do aluno e alcançar as metas
+                                    estabelecidas.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="bioritmo">
+                <div id="teste">
+                    <div id="fundo">
+                        <div class="formatacao">
+                            <a href="#experiencias" class="close-btn">x</a>
+                            <div class="card-experiencias">
+                                <h3>Escola de Ginástica e Dança BioBanco Ltda (BioRitmo)</h3>
+                                <p><span>Cargo:</span> Professor
+                                    de Educação Física</p>
+                                <p><span>Período:</span> Agosto/2014 - Outubro/2017</p>
+                            </div>
+                            <h4>Principais responsabilidades:</h4>
+                            <ul>
+                                <li>
+                                    Planejamento e orientação de treinos
+                                    personalizados para alunos com diferentes perfis.
+                                </li>
+                                <li>
+                                    Realização de
+                                    avaliações físicas e acompanhamento do desempenho.
+                                </li>
+                                <li>
+                                    Coordenação e
+                                    treinamento de estagiários, garantindo alinhamento com as práticas da
+                                    instituição.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+        </section>
     </div>
 </body>
 
