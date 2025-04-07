@@ -13,6 +13,7 @@ body {
   color: aliceblue;
   margin: 25px;
   border: 1px solid white;
+  border-radius: 2px;
 }
 
 .container {
@@ -82,10 +83,6 @@ body {
 
 #left nav a.animacao:hover::after {
   width: 110%;
-}
-
-#left nav a:target {
-  border-bottom: 1px solid white;
 }
 
 #left footer {
