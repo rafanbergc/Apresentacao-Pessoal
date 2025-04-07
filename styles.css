@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
-  
 }
 
 body {
@@ -12,7 +11,7 @@ body {
   height: 95vh;
   font-family: "Roboto Mono", monospace;
   color: aliceblue;
-  margin: 25px 25px 25px 25px;
+  margin: 25px;
   border: 1px solid white;
 }
 
@@ -21,9 +20,7 @@ body {
   display: flex;
   width: 95vw;
   height: 95vh;
-
 }
-
 
 #left {
   display: flex;
@@ -31,94 +28,88 @@ body {
   padding: 15px;
   width: 40vw;
   height: 95vh;
-
-  header {
-    height: 20vh;
-
-    h1 {
-      font-size: 60px;
-      font-weight: 200;
-    }
-
-    h2 {
-      font-size: 25px;
-      font-weight: 100;
-    }
-
-    p {
-      font-size: 10px;
-      font-weight: 100;
-      
-    }
-  }
-
-  nav {
-    padding-top: 10px;
-    height: 60vh;
-
-  
-    a {
-      color: white;
-      font-size: 15px;
-      font-weight: 100;
-    }
-
-    .animacao:hover {
-      font-size: 16px;
-    }
-    
-
-    .animacao {
-      position: relative;
-      text-decoration: none;
-    }
-
-
-    .animacao::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 0;
-      height: 1px;
-      background-color: white;
-      transition: width 1.0s ease-in-out;
-    }
-
-    .animacao:hover::after {
-      width: 110%;
-    }
-    a:target {
-      border-bottom: 1px solid white;
-    }
-  }
-
-
-  footer {
-    height: 20vh;
-    width: 48vh;
-
-    .icons {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-    .inside-icons {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-weight: 100;
-    }
-
-    p {
-      font-size: 10px;
-    }
-  }
 }
 
-#right {
+#left header {
+  height: 20vh;
+}
 
+#left header h1 {
+  font-size: 60px;
+  font-weight: 200;
+}
+
+#left header h2 {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+#left header p {
+  font-size: 10px;
+  font-weight: 100;
+}
+
+#left nav {
+  padding-top: 10px;
+  height: 60vh;
+}
+
+#left nav a {
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+#left nav a.animacao {
+  position: relative;
+}
+
+#left nav a.animacao:hover {
+  font-size: 16px;
+}
+
+#left nav a.animacao::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 1.0s ease-in-out;
+}
+
+#left nav a.animacao:hover::after {
+  width: 110%;
+}
+
+#left nav a:target {
+  border-bottom: 1px solid white;
+}
+
+#left footer {
+  height: 20vh;
+  width: 48vh;
+}
+
+#left footer .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#left footer .inside-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 100;
+}
+
+#left footer p {
+  font-size: 10px;
+}
+#right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,126 +117,120 @@ body {
   width: 55vw;
   height: 95vh;
   padding: 15px;
-
-  .content {
-    width: 55vw;
-    height: 95vh;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-  }
-
-  .text-home {
-    text-align: right;
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: translateX(-50%);
-
-
-    p {
-      font-size: 14px;
-      font-weight: 200;
-    }
-
-    span {
-      font-size: 16px;
-      font-weight: 300;
-
-    }
-  }
-
-  .text-bio {
-    font-size: 16px;
-    font-weight: 300;
-    padding: 15px;
-  }
-
-  img {
-    width: 10vw;
-    height: 20vh;
-    object-fit: cover;
-    position: absolute;
-    bottom: 34%;
-    left: 9%;
-    border: 1px solid white;
-  }
-
-  .sobre-text {
-    font-size: 16px;
-    font-weight: 300;
-    padding: 15px;
-
-
-  }
-
-  .cursos-text {
-    color: white;
-    font-size: 16px;
-    font-weight: 300;
-    padding: 15px;
-
-    h1 {
-      font-size: 17px;
-      font-weight: 300;
-    }
-
-    h3 {
-      font-size: 16px;
-      font-weight: 400;
-    }
-
-    span {
-      font-size: 15px;
-      font-weight: 300;
-    }
-
-    p {
-      font-size: 14px;
-      font-weight: 400;
-    }
-  }
-
-
 }
+
+#right .content {
+  width: 55vw;
+  height: 95vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#right .text-home {
+  text-align: right;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(-50%);
+}
+
+#right .text-home p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#right .text-home span {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#right .text-bio {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 15px;
+}
+
+#right img {
+  width: 10vw;
+  height: 20vh;
+  object-fit: cover;
+  position: absolute;
+  bottom: 34%;
+  left: 9%;
+  border: 1px solid white;
+}
+
+#right .sobre-text {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 15px;
+}
+
+#right .cursos-text {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 15px;
+}
+
+#right .cursos-text h1 {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+#right .cursos-text h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#right .cursos-text span {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#right .cursos-text p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
-  
 }
+
 .card-experiencias {
   color: white;
   font-size: 16px;
   font-weight: 300;
   padding: 15px;
+}
 
-  h3 {
-    font-size: 17px;
-    font-weight: 500;
-  }
+.card-experiencias h3 {
+  font-size: 17px;
+  font-weight: 500;
+}
 
-  h4 {
-    font-size: 15px;
-    font-weight: 500;
-  }
+.card-experiencias h4 {
+  font-size: 15px;
+  font-weight: 500;
+}
 
-  span {
-    font-size: 15px;
-    font-weight: 300;
-  }
+.card-experiencias span {
+  font-size: 15px;
+  font-weight: 300;
+}
 
-  p {
-    font-size: 14px;
-    font-weight: 400;
-  }
+.card-experiencias p {
+  font-size: 14px;
+  font-weight: 400;
+}
 
-  li {
-    font-size: 14px;
-    font-weight: 200;
-  }
+.card-experiencias li {
+  font-size: 14px;
+  font-weight: 200;
 }
 
 .close-btn {
@@ -257,42 +242,39 @@ a {
   font-size: 20px;
   text-decoration: none;
 }
-
 #teste {
   background-color: #000;
   z-index: 9999;
+}
 
-  .card-experiencias {
-    text-align: left;
-    padding: 0;
+#teste .card-experiencias {
+  text-align: left;
+  padding: 0;
+}
 
-    h3 {
-      font-size: 17px;
-      font-weight: 400;
+#teste .card-experiencias h3 {
+  font-size: 17px;
+  font-weight: 400;
+}
 
-    }
+#teste .card-experiencias span {
+  font-size: 14px;
+  font-weight: 400;
+}
 
-    span {
-      font-size: 14px;
-      font-weight: 400;
-    }
+#teste .card-experiencias p {
+  font-size: 14px;
+  font-weight: 300;
+}
 
-    p {
-      font-size: 14px;
-      font-weight: 300;
+#teste h4 {
+  font-size: 17px;
+  font-weight: 400;
+}
 
-    }
-  }
-
-  h4 {
-    font-size: 17px;
-    font-weight: 400;
-  }
-
-  li {
-    font-size: 14px;
-    font-weight: 300;
-  }
+#teste li {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 #fundo {
@@ -306,9 +288,9 @@ a {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9998;
-
 }
 
+/* Seções com :target para navegação */
 
 #home {
   display: block;
@@ -321,7 +303,6 @@ a {
 #home:not(:target) {
   display: none;
 }
-
 
 #bio {
   display: none;
@@ -339,8 +320,16 @@ a {
   display: block;
 }
 
+#experiencias {
+  display: none;
+}
+
 #experiencias:target {
   display: flex;
+}
+
+#experiencias:not(:target) {
+  display: none;
 }
 
 #cursos {
@@ -351,15 +340,7 @@ a {
   display: block;
 }
 
-#experiencias:not(:target) {
-  display: none;
-}
-
 #quinto-andar {
-  display: none;
-}
-
-#quinto-andar:not(:target) {
   display: none;
 }
 
@@ -367,11 +348,11 @@ a {
   display: flex;
 }
 
-#move {
+#quinto-andar:not(:target) {
   display: none;
 }
 
-#move:not(:target) {
+#move {
   display: none;
 }
 
@@ -379,14 +360,18 @@ a {
   display: flex;
 }
 
-#bioritmo {
+#move:not(:target) {
   display: none;
 }
 
-#bioritmo:not(:target) {
+#bioritmo {
   display: none;
 }
 
 #bioritmo:target {
   display: flex;
+}
+
+#bioritmo:not(:target) {
+  display: none;
 }
