@@ -99,6 +99,7 @@ body {
   align-items: center;
 }
 
+
 #left footer .inside-icons {
   display: flex;
   flex-direction: column;
@@ -106,9 +107,21 @@ body {
   font-weight: 100;
 }
 
+#left footer .inside-icons:hover {
+  font-size: 20px;
+} 
+
+
 #left footer p {
   font-size: 10px;
 }
+#left footer .inside-icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
 #right {
   display: flex;
   flex-direction: column;
